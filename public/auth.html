@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" href="/img/favicon.ico">
+    <title>{{title}} | Login</title>
+</head>
+
+<body>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                        <form action="/login" method="POST" class="box">
+                            <div class="field">
+                                <label for="" class="label">Username</label>
+                                <div class="control has-icons-left">
+                                    <input type="text" placeholder="" class="input" name="username" value="{{username}}" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="" class="label">Password</label>
+                                <div class="control has-icons-left">
+                                    <input type="password" placeholder="" class="input" name="password" value="{{password}}" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="buttons is-centered">
+                                    <button class="button">Login</button>
+                                </div>
+                                {{#if error}}
+                                <div class="buttons is-centered">
+                                    <p class="help is-danger is-centered">{{error}}</p>
+                                </div>
+                                {{/if}}
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
