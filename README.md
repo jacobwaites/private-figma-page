@@ -12,4 +12,4 @@ FIGMA_URL=https://www.figma.com/xxxx
 ```
 
 # Deploy to Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vanderlin/private-figma-page/blob/master/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vanderlin/private-figma-page/blob/master/&env[COOKIE_SECRET]=xxxx&env[SITE_PASSWORD]=xxxxx&env[SITE_TITLE]=myapp&env[FIGMA_URL]=https://www.figma.com/embed/xxxx)
