@@ -1,0 +1,11 @@
+{
+    "name": "Figma App Page",
+    "description": "Simple express app to serve a figma url fullscreen behind a password.",
+    "repository": "https://github.com/vanderlin/private-figma-page",
+    "keywords": [
+        "node",
+        "express",
+        "static",
+        "figma"
+    ]
+}
