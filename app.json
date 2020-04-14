@@ -7,5 +7,23 @@
         "express",
         "static",
         "figma"
-    ]
+    ],
+    "env": {
+        "COOKIE_SECRET": {
+            "description": "sessions secret",
+            "generator": "secret"
+        },
+        "SITE_PASSWORD": {
+            "description": "Password for the site",
+            "generator": "secret"
+        },
+        "SITE_TITLE": {
+            "description": "Site title",
+            "value": "My Figma App"
+        },
+        "FIGMA_URL": {
+            "description": "Figma iframe url",
+            "value": "https://www.figma.com/embed/xxxx"
+        }
+    }
 }
