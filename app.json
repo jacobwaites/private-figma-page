@@ -19,7 +19,7 @@
         },
         "SITE_PASSWORD": {
             "description": "Password for the site",
-            "generator": "secret"
+            "value": "password"
         },
         "SITE_TITLE": {
             "description": "Site title",
