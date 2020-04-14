@@ -13,6 +13,10 @@
             "description": "sessions secret",
             "generator": "secret"
         },
+        "SITE_USERNAME": {
+            "description": "Username for the site",
+            "value": "admin"
+        },
         "SITE_PASSWORD": {
             "description": "Password for the site",
             "generator": "secret"

@@ -13,8 +13,10 @@ app.disable('x-powered-by');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const admins = {
-    admin: { password: process.env.SITE_PASSWORD }
+let admins = {}
+
+admins[process.env.SITE_USERNAME] = {
+    password: process.env.SITE_PASSWORD
 }
 
 app.use(cookieSession({
